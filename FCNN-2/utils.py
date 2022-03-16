@@ -13,12 +13,12 @@ def get_data(batch_train, batch_test):
     test_data    = np.load(loc_str + 'testx.npy')
     test_labels  = np.load(loc_str + 'testy.npy')
 
-    train_data    = train_data[:,[0,3]]
-    valid_data    = valid_data[:,[0,3]]
-    test_data     = test_data[:,[0,3]]
-    train_labels   = train_labels[:,0]
-    valid_labels   = valid_labels[:,0]
-    test_labels    = test_labels[:,0]
+#    train_data    = train_data[:,[0,3]]
+#    valid_data    = valid_data[:,[0,3]]
+#    test_data     = test_data[:,[0,3]]
+#    train_labels   = train_labels[:,0]
+#    valid_labels   = valid_labels[:,0]
+#    test_labels    = test_labels[:,0]
 
     ## Train data:
     train_dataset = TensorDataset(Tensor(train_data).float(), Tensor(train_labels).float())
