@@ -38,8 +38,8 @@ args.nhid2 = int(c_n2[int(np.random.randint(7))])
 
 
 
-ninp = 2                       # 3 input features being used (as of now)
-nout = 1
+ninp = 6                       # 3 input features being used (as of now)
+nout = 3
 batch_test = 10
 
 trainloader, train_dataset, testloader, test_dataset = utils.get_data(args.batch,batch_test)
